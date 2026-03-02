@@ -96,6 +96,7 @@ fun CrearCarta(cursos: cursos) {
             }
     }else if (cursos.tipo=="No Registrado")
     {
+        //Porque no se subio
         Row(modifier = Modifier.fillMaxWidth().padding(18.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceEvenly) {
