@@ -124,9 +124,9 @@ fun PantallaPerfil()
         )
         val gridState = rememberLazyGridState()
         val cursos_list = listOf(
-            cursos("Autumn Termn", R.drawable.jitafa , "Semana 1","Registrado","$9.9"),
-            cursos("Autumn Termn", R.drawable.chiyo, "Dia 2","Registrado","$9.9"),
-            cursos("Autumn Termn", R.drawable.jaimeerrique, "Semana 2","Registrado","$9.9"),
+            cursos("Autumn Termn", R.drawable.jitafa , "Semana 1","Registrado","9.9"),
+            cursos("Autumn Termn", R.drawable.chiyo, "Dia 2","Registrado","9.9"),
+            cursos("Autumn Termn", R.drawable.jaimeerrique, "Semana 2","Registrado","9.9"),
         )
         val cursos_reg=cursos_list.filter { it.tipo=="Registrado" }
         LazyColumn(modifier = Modifier.fillMaxSize(),

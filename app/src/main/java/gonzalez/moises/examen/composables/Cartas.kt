@@ -35,6 +35,7 @@ import androidx.compose.ui.layout.VerticalAlignmentLine
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -126,17 +127,24 @@ fun CrearCarta(cursos: cursos) {
                     textAlign = TextAlign.Left
                 )
             }
-            Text(
-                //precio
-                modifier = Modifier.padding(8.dp),
-                text = cursos.precio, fontSize = 19.sp,
-                fontWeight = FontWeight.Bold,
-                color = Color.Red,
-                textAlign = TextAlign.Left
-            )
-
+            Column() {
+                Text(
+                    //precio
+                    modifier = Modifier.padding(8.dp),
+                    text = cursos.precio, fontSize = 19.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Red,
+                    textAlign = TextAlign.Left
+                )
+                Text(
+                    text = "¥${cursos.precio.toFloat() * 5}",
+                    fontSize = 15.sp,
+                    fontWeight = FontWeight.Normal,
+                    color = Color.Gray,
+                    textDecoration = TextDecoration.LineThrough,
+                    textAlign = TextAlign.Left
+                )}
         }
     }
-
 }
 

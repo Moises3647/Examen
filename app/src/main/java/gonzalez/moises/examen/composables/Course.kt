@@ -162,9 +162,9 @@ fun Cursos_pantalla(){
             textAlign = TextAlign.Left,
         )
         val cursos_list = listOf(
-            cursos("Try for 7 days", R.drawable.chiyo, "Start on Aug, 1st","No Registrado","$9.9"),
-            cursos("Autumn Termn", R.drawable.jitafa, "Start on Sep, 1st","No Registrado","$398"),
-            cursos("Autumn Termn", R.drawable.jaimeerrique, "Semana 2","No Registrado","$67"),
+            cursos("Try for 7 days", R.drawable.chiyo, "Start on Aug, 1st","No Registrado","9.9"),
+            cursos("Autumn Termn", R.drawable.jitafa, "Start on Sep, 1st","No Registrado","398"),
+            cursos("Autumn Termn", R.drawable.jaimeerrique, "Semana 2","No Registrado","67"),
         )
         val cursos_reg=cursos_list.filter { it.tipo=="No Registrado" }
         LazyColumn(modifier = Modifier.fillMaxSize(),
